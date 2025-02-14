@@ -10,17 +10,18 @@
             padding: 0;
             height: 100%;
             width: 100%;
-            overflow: hidden; /* Prevents unwanted scrolling */
-            background-color: black; /* Optional: Helps identify white space */
+            overflow: hidden; /* Prevents extra scrolling */
+            background-color: black; /* Optional: Helps debug white space issues */
         }
-        embed {
+        iframe {
             display: block;
             width: 100vw; /* Full width */
-            height: 100vh; /* Full viewport height */
+            height: 100vh; /* Full height */
+            border: none; /* Removes border */
         }
     </style>
 </head>
 <body>
-    <embed src="GitLab learning slides.pdf" type="application/pdf" />
+    <iframe src="GitLab learning slides.pdf"></iframe>
 </body>
 </html>
